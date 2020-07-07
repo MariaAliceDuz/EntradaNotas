@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lançamento Notas</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+
+    <body>
+        <header class = 'menu'>
+            <div class="menu-logo">
+                <p>Colégio XX</p>
+            </div>
+            <nav class="menu-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Disciplinas</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="content">
+            <p>
+                <h1>Notas</h1>
+            </p>
+
+            <div class = "select-button">
+                <select name="select" id="select">
+                    <option value="TurmaN1" id="TurmaN1">Turma N1</option>
+                    <option value="TurmaN2" id="TurmaN2">Turma N2</option>
+                </select>
+
+                <button onclick="setTabelaNotas()">
+                    Obter Notas
+                </button>
+            </div>
+            <table id = "tabela-notas", class="tabela">  </table>
+        </div>
+    
+        
+        <footer class = 'footer'></footer>
+
+        <script src="scripts/lancaNotas.js"></script>
+    </body>
+</html>
